@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Boletas</title>
+    <link rel="stylesheet" href="/css/Style.css">
+    <link rel="stylesheet" href="/css/index-Style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Sistema de Gestión de Boletas</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <!-- class="disabled" -->
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="AdministrarBoletas.html">Ver Boletas</a></li>
+            <li><a href="#" class="disabled">Generar Boletas</a></li>
+        </ul>
+    </nav>
+    <div class="Container">
+        <header>
+            <div class="Header-Container">
+                <h1><strong>Generador de factura</strong></h1>
+            </div>
+        </header>
+        <div class="Form-Container">
+            <form >
+                <label for="Rut"><strong>Rut:</strong></label><br>
+                <input class="Rut" type="text" name="Rut" id="Rut" required><br><br>
+
+                <label for="Client-Name"><strong>Nombre del cliente:</strong></label><br>
+                <input class="Client-Name" type="text" name="Client-Name" id="Client-Name" required><br><br>
+
+                <label for="Direcction"><strong>Direccion:</strong></label><br>
+                <input class="Direcction" type="text" name="Direcction" id="Direcction" required><br><br>
+
+                <label for="City"><strong>Ciudad:</strong></label><br>
+                <select name="City" class="City" id="City" required>
+                    <option value="Santiago" selected>Santiago</option>
+                    <option value="Valparaiso">Valparaiso</option>
+                    <option value="Concepcion">Concepcion</option>
+                    <option value="Antofagasta">Antofagasta</option>
+                    <option value="Temuco">Temuco</option>
+                </select><br><br>
+            </form>
+        </div>
+        <div class="Button-Container">
+            <button id="NuevoElemento">Agregar Linea</button>
+            <button type="reset" id="LimpiarCampos">Limpiar Campos</button>
+
+        </div>
+        <div class="Table-Container">
+            <table>
+                <thead>
+                    <tr>
+                        <th><strong>Cantidad</strong></th>
+                        <th><strong>Detalle</strong></th>
+                        <th><strong>Valor</strong></th>
+                        <th><strong>Acciones</strong></th>
+                    </tr>
+                </thead>
+                <tbody id="items">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h5>Total : <span id="Total">0</span></h5>
+            <button id="GenerarBoleta">Generar Boleta</button>
+        </div>
+    </div>
+    <script src="../js/Boletas/Script.js"></script>
+</body>
+
+</html>

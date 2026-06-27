@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Boleta</title>
+
+    <link rel="stylesheet" href="/css/Style.css">
+    <link rel="stylesheet" href="../css/index-Style.css">
+    <link rel="stylesheet" href="../css/Boletas-Style.css">
+</head>
+
+<body>
+    
+    <header class="header">
+        <h1>Sistema de Gestión de Boletas</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <!-- class="disabled" -->
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="AdministrarBoletas.html">Ver Boletas</a></li>
+            <li><a href="GenerarBoletas.html">Generar Boletas</a></li>
+        </ul>
+    </nav>
+    <div class="Container">
+        <header>
+            <h1>Detalle de Boleta</h1>
+        </header>
+        <main>
+            <section>
+                <p><strong>ID:</strong> <span id="IdBoleta"></span></p>
+                <p><strong>Rut:</strong> <span id="Rut"></span></p>
+                <p><strong>Nombre:</strong> <span id="Nombre"></span></p>
+                <p><strong>Dirección:</strong> <span id="Direccion"></span></p>
+                <p><strong>Ciudad:</strong> <span id="Ciudad"></span></p>
+                <p><strong>Fecha:</strong> <span id="Fecha"></span></p>
+                <p><strong>Total:</strong> <span id="Total"></span></p>
+                <h3>Detalle</h3>
+                <pre id="Detalle"></pre>
+                <br>
+                <a class="BotonVer" href="AdministrarBoletas.html">
+                    Volver
+                </a>
+                <br>     
+            </section>
+
+        </main>
+
+    </div>
+    <script src="../js/Boletas/VerBoleta.js"></script>
+
+</body>
+
+</html>

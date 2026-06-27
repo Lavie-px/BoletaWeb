@@ -1,0 +1,60 @@
+
+
+.BotonVer, .BotonEliminar, #ConfirmarEliminar, #CancelarEliminar, #BtnBuscar, #BtnLimpiar{
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+.BotonVer, #ConfirmarEliminar, #BtnBuscar{
+    background-color: #2c34cc;
+}
+
+.BotonVer:hover, #ConfirmarEliminar:hover, #BtnBuscar:hover{
+    background-color: hsl(240, 100%, 40%);
+}
+
+.BotonEliminar, #CancelarEliminar, #BtnLimpiar{
+    background-color: #a72b2b;
+}
+
+.BotonEliminar:hover, #CancelarEliminar:hover, #BtnLimpiar:hover{
+    background-color: hsl(0, 72%, 27%);
+
+}
+
+.Boletas-Container{
+    display:flex;
+    flex-direction: column;
+    justify-content: top;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    border-radius: 8px;
+    padding-left: 20px;
+    padding: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+thead{
+    background-color: #f6f6f6;
+    width: 98%;
+    border: 1px solid rgb(104, 104, 104);
+}
+
+table{
+    width: 80%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td{
+    border: 1px solid rgb(104, 104, 104);
+    text-align: center;
+    padding: 5px;
+}

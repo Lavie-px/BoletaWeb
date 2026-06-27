@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Adminsitrar boletas</title>
+    <link rel="stylesheet" href="/css/Boletas-Style.css">
+    <link rel="stylesheet" href="/css/index-Style.css">
+    <link rel="stylesheet" href="/css/Overlay.css">
+    <link rel="stylesheet" href="/css/Buscador-Style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Sistema de Gestión de Boletas</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#" class="disabled">Ver Boletas</a></li>
+            <li><a href="GenerarBoletas.html">Generar Boletas</a></li>
+        </ul>
+    </nav>
+    <div class="Container">
+        <main>
+            <section class="Boletas-Container">
+                <h2>Listado de Boletas</h2>
+
+                 <div class="Buscador">
+
+                    <input type="text" id="BuscarRut" placeholder="Rut">
+                    <input type="date" id="BuscarFecha">
+                    <button id="BtnBuscar" >Buscar</button>
+                    <button id="BtnLimpiar">Limpiar Filtros</button>
+
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Rut</th>
+                            <th>Nombre</th>
+                            <th>Ciudad</th>
+                            <th>Fecha</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="TablaBoletas">
+                    </tbody>
+                </table>
+
+                <div id="Overlay">
+                    <div id="ModalEliminar">
+
+                        <h2>Eliminar Boleta</h2>
+
+                        <p id="TextoEliminar">¿Desea eliminar esta boleta?</p>
+
+                        <div class="BotonesModal">
+
+                            <button id="ConfirmarEliminar">
+                                Eliminar
+                            </button>
+
+                            <button id="CancelarEliminar">
+                                Cancelar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <script src="../js/Boletas/CargarBoletas.js"></script>
+            <script src="../js/Boletas/Eliminar.js"></script>
+            <script src="../js/Boletas/Buscador.js"></script>
+        </main>
+        
+        <footer>
+            <p>© 2026 Sistema de Gestión de Boletas</p>
+        </footer>
+    </div>
+</body>
+
+</html>
